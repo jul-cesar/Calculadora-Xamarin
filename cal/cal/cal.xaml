@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="cal.cal"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Entry
+            x:Name="InputField"
+            Grid.Row="0"
+            HorizontalTextAlignment="End"
+            IsReadOnly="true"
+            Placeholder="0" />
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="1" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="2" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                Text="3" />
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="4" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="5" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                Text="6" />
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="7" />
+
+
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="8" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                Text="9" />
+
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="+" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="*" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                Text="/" />
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="-" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="1"
+                Clicked="resetear"
+                Text="C" />
+
+
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="2"
+                Clicked="borrarDigito"
+                Text="Borrar" />
+
+
+            <Button
+                Grid.Row="5"
+                Grid.Column="0"
+                Clicked="botonIgual"
+                Text="=" />
+            <Button
+                Grid.Row="5"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="." />
+            <Button
+                Grid.Row="5"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                Text="0" />
+        </Grid>
+    </Grid>
+</ContentPage>
