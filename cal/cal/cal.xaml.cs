@@ -4,7 +4,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -60,7 +59,7 @@ namespace cal
                var resultado = dt.Compute(expression, "");
 
 
-                InputField.Text = resultado.ToString();
+                InputField.Text = $" = {resultado.ToString() }";
                 mostrandoResultado = true;
             }
             catch (Exception ex)
@@ -81,6 +80,13 @@ namespace cal
         private void resetear(object sender, EventArgs e)
         {
             InputField.Text = "";
+            
+        }
+
+        private void InputField_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            op.Text = e.OldTextValue;
         }
     }
 
